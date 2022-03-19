@@ -32,7 +32,6 @@ function restart(reason) {
     root.innerHTML = "";
     counterElement.innerHTML = `Number of guesses left: ${7 - counter}`;
     loadNumbers();
-    console.log(secretNumber);
     if (reason === "lost") gameLostModal.show();
     if (reason === "won") gameWonModal.show();
 }
@@ -112,4 +111,4 @@ window.addEventListener("load", () => {
     loadNumbers();
 });
 
-console.log(secretNumber);
+
